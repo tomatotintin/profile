@@ -176,8 +176,9 @@ $(document).ready(function(){
             
             $('.work_img').hover(
                 function(){
+                    var moveY=($(this).height())- ($(this).find('span').height());
                     $(this).find('span').animate({
-                        top: "87%"
+                        top:moveY 
                     }, 300);
                 },
                 function(){
@@ -192,7 +193,6 @@ $(document).ready(function(){
     
     //打開作品介紹
     $('.work_img').mousedown(function(){
-        
         console.log("按下作品!"+$(this).attr('id'));
         //將內容填入
         var index=String($(this).attr('id')).split("work_").join("");
