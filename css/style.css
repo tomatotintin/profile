@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 
 #cont .well {
   background-color: white !important;
@@ -3993,7 +3993,7 @@ body.noscroll {
 {
     font-family: 'cwTeXHei', sans-serif;
     text-align:center;
-    font-size: 20px;
+    font-size: 2vw;
     background-color: rgba(131,14,41, 0.7);
     color:darkgray;
     height: 100%;
@@ -4027,9 +4027,11 @@ a.lightbox img {
     transition: opacity .5s ease-in-out;
     overflow: hidden;
     z-index: 1033;
+/*
          display:flex;
       align-items:center;
       justify-content:center;
+*/
 
 
 }
@@ -4157,6 +4159,14 @@ a.lightbox-close:after {
     border-radius: 10px;
 /*    box-shadow:10px 10px 10px rgba(4, 21, 19, 0.51);*/
     overflow-y:auto;
+    
+    -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%); 
+   -ms-transform: translate(-50%, -50%); 
+   -o-transform: translate(-50%, -50%); 
+   transform: translate(-50%, -50%); 
+   top: 50%;
+   left: 50%; 
     
 }
 #lightbox-content-technology span{
